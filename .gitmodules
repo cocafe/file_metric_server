@@ -1,3 +1,6 @@
 [submodule "lib/libjj"]
 	path = lib/libjj
 	url = git@github.com:cocafe/libjj.git
+[submodule "lib/libpromsrv"]
+	path = lib/libpromsrv
+	url = git@github.com:cocafe/libpromsrv.git
