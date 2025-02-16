@@ -1,0 +1,116 @@
+{
+    "metric_sets": [
+        {
+            "name": "f5321_thermal_tempC",
+            "type": "gauge",
+            "metrics": [
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor1"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone10/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor2"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone11/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor3"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone12/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor4"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone13/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor5"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone14/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor6"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone15/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor7"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone16/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor8"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone17/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor9"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone18/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor10"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone19/temp"
+                },
+                {
+                    "expr": "%f / 1000",
+                    "labels": [{ "key": "zone", "val": "bms"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone2/temp"
+                },
+                {
+                    "expr": "%f / 1000",
+                    "labels": [{ "key": "zone", "val": "pm8950"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone20/temp"
+                },
+                {
+                    "expr": "%f / 1000",
+                    "labels": [{ "key": "zone", "val": "pm8004"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone21/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "pa"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone22/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "wsatz_11"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone23/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "wsatz_12"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone24/temp"
+                },
+                {
+                    "expr": "%f / 1000",
+                    "labels": [{ "key": "zone", "val": "battery"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone3/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "pa_therm1"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone4/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "xo"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone5/temp"
+                },
+                {
+                    "expr": "%f / 10",
+                    "labels": [{ "key": "zone", "val": "case"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone7/temp"
+                },
+                {
+                    "labels": [{ "key": "zone", "val": "tsens_tz_sensor0"} ],
+                    "path": "/sys/devices/virtual/thermal/thermal_zone9/temp"
+                }
+            ]
+        },
+        {
+            "metrics": [
+                {
+		    "expr": "%f / 1000",
+                    "labels": [{ "key": "zone", "val": "battery"} ],
+                    "path": "/sys/class/power_supply/battery/voltage_now"
+                },
+                {
+		    "expr": "%f / 1000",
+                    "labels": [{ "key": "zone", "val": "usb"} ],
+                    "path": "/sys/class/power_supply/usb/voltage_now"
+                }
+            ],
+            "name": "f5321_voltage_mV",
+            "type": "gauge"
+        }
+    ],
+    "metrics": []
+}
