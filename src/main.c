@@ -332,7 +332,7 @@ static int metric_list_refresh(void)
                         continue;
 
                 if (metric_value_get(p))
-                        p->val = NAN;
+                        continue;
 
                 if (!isnan(p->val) && p->expr) {
                         metric_value_expr_compute(p);
