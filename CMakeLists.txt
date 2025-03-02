@@ -47,9 +47,12 @@ add_subdirectory(lib/libjj)
 
 target_include_directories(${PROJECT_NAME} PUBLIC include)
 target_include_directories(${PROJECT_NAME} PUBLIC lib)
+target_include_directories(${PROJECT_NAME} PUBLIC lib/uthash/src)
 target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR})
 
-target_link_libraries(${PROJECT_NAME} jjcom promsrv)
+#target_link_options(${PROJECT_NAME} PRIVATE -static)
+
+target_link_libraries(${PROJECT_NAME} jjcom promsrv pthread)
 
 set(INSTALL_DEST "Build-${CMAKE_BUILD_TYPE}")
 
