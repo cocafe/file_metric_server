@@ -198,8 +198,8 @@ static int config_root_key_create(jbuf_t *b)
                                                 {
                                                         void *obj_label = jbuf_offset_obj_open(b, NULL, 0);
 
-                                                        jbuf_offset_strbuf_add(b, "key", offsetof(struct metric_label, key), sizeof(sizeof(((struct metric_label *)(0))->key)));
-                                                        jbuf_offset_strbuf_add(b, "val", offsetof(struct metric_label, value), sizeof(sizeof(((struct metric_label *)(0))->value)));
+                                                        jbuf_offset_strbuf_add(b, "key", offsetof(struct metric_label, key), sizeof_member(struct metric_label, key));
+                                                        jbuf_offset_strbuf_add(b, "val", offsetof(struct metric_label, value), sizeof_member(struct metric_label, value));
 
                                                         jbuf_obj_close(b, obj_label);
                                                 }
@@ -265,8 +265,8 @@ static int config_root_key_create(jbuf_t *b)
                                                 {
                                                         void *obj_label = jbuf_offset_obj_open(b, NULL, 0);
 
-                                                        jbuf_offset_strbuf_add(b, "key", offsetof(struct metric_label, key), sizeof(sizeof(((struct metric_label *)(0))->key)));
-                                                        jbuf_offset_strbuf_add(b, "val", offsetof(struct metric_label, value), sizeof(sizeof(((struct metric_label *)(0))->value)));
+                                                        jbuf_offset_strbuf_add(b, "key", offsetof(struct metric_label, key), sizeof_member(struct metric_label, key));
+                                                        jbuf_offset_strbuf_add(b, "val", offsetof(struct metric_label, value), sizeof_member(struct metric_label, value));
 
                                                         jbuf_obj_close(b, obj_label);
                                                 }
